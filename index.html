@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website</title>
+
+    <!--Google fonts CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"><link>
+
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    <!--Navbar-->
+     <nav class="navbar">
+        <!-- Logo-->
+         <img src="img/logo.png" class="logo" alt="">
+         
+         <!--ul-->
+        <ul class="links-container">
+            <li class="link-items"><a href="#" class="links">Main</a></li>
+            <li class="link-items"><a href="order.html" class="links">Order</a></li>
+            <li class="link-items"><a href="#restaurants-section" class="links">Restauants</a></li>
+            <li class="link-items"><a href="#about-section" class="links">About Us</a></li>
+        </ul>
+
+        <!--Search box-->
+        <div class="nav-extras">
+            <!--Search box-->
+            <div class="search">
+                <input type="text" class="search-box" placeholder="Search Restauants, Cuisine....">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i> </button>
+            </div>
+            <!--Cart btn-->
+            <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+     </nav>
+
+     <!--hero section-->
+
+     <main id="hero-section">
+    
+        <!--hero content-->
+        <div class="hero-content">
+            <h1 class="hero-heading">Eat the best</h1>
+            <p class="hero-line">Explore and understand the culture more by tasting amazing dishes of that culture</p>
+            <div class="search location">
+                <input type="text" class="search-box" placeholder="Search Restauants, Cuisine....">
+                <button class="search-btn locate-btn"><i class="fa-solid fa-location-crosshairs"></i> </button>
+            </div>
+            <div  class="hero-action-btn-container">
+                <button onclick="window.location.href='order.html'" class="btn">Order Now</button>
+                <p class="or">or</p>
+                <button class="btn transparent">Make reservation</button>
+            </div>
+        </div>
+
+        <!--hero image container-->
+
+        <div class="hero-image-container">
+            <div class="background-element">
+                <div class="ellipse"></div>
+                <div class="ellipse"></div>
+                <div class="ellipse"></div>
+            </div>
+            <div class="forground-elements">
+                <img src="img/hero-biryani.png" class="hero-img" alt="">
+                <img src="img/hero-burger.png" class="hero-img" alt="">
+                <img src="img/hero-pizza.png" class="hero-img" alt="">
+
+                <div class="review-box">
+                    <div class="reviewer-info">
+                        <img src="img/user-1.png" class="reviewer-img" alt="">
+
+                        <div class="reviewer">
+                            <div class="reviewer-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h2 class="reviewer-name">James</h2>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="review">The restaurant was good. Staff was very welcoming and the food.... well no words for it. Chef was amazing and the view of sky from the top deck was fabulous.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </main>
+    </header>
+
+    <!--restaurants section-->
+    <section id="restaurants-section" style="padding: 100px 20px;">
+
+       <div class="leaf-layer right">
+            <img src="img/leafs.png"  alt="">
+       </div>
+
+        <div class="section">
+
+            <!--food img container-->
+            <div class="food-image-container">
+                <div class="circle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="circle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div>
+                    <img src="img/food-1.png" class="food-img" alt="">
+                    <img src="img/food-2.png" class="food-img" alt="">
+                    <img src="img/food-3.png" class="food-img" alt="">
+                    <img src="img/food-4.png" class="food-img" alt="">
+                    <img src="img/food-5.png" class="food-img" alt="">
+                    <img src="img/food-6.png" class="food-img" alt="">
+                    <img src="img/food-7.png" class="food-img" alt="">
+                </div>
+            </div>
+
+
+            <!--section content-->
+            <div class="section-detail">
+                <span class="section-highlight">From professional chef</span>
+                <p class="section-title">1000+</p>
+                <p class="section-info"> Order from our 1000+ food and beverages menu. Food for every taste and mood</p>
+
+                <button onclick="window.location.href='order.html'" class="btn">Order food</button>
+            </div>    
+        </div>
+
+        <div class="restaurants-container">
+            <div class="restaurant">
+                <p class="discount">50% off</p>
+                <div class="restaurant-thumbnail">
+                    <img src="img/restaurant-1.png" class="restaurants-img" alt="">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Restauant 01</h3>
+                    <p class="menu">Burgers, Fries, Nuggets</p>
+                    <p class="place">Busan</p>
+                    <span class="rating">4.2 <i class="fa-solid fa-star"></i></span>
+                </div>
+            </div>
+            <div class="restaurant">
+                <div class="restaurant-thumbnail">
+                    <img src="img/restaurant-2.png" class="restaurants-img" alt="">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Restauant 02</h3>
+                    <p class="menu">Pasta,Pizza, Spaghetti..</p>
+                    <p class="place">Busan</p>
+                    <span class="rating">4.2 <i class="fa-solid fa-star"></i></span>
+                </div>
+            </div>
+            <div class="restaurant">
+                <p class="discount">50% off</p>
+                <div class="restaurant-thumbnail">
+                    <img src="img/restaurant-3.png" class="restaurants-img" alt="">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Restauant 03</h3>
+                    <p class="menu">Burgers, Fries, Nuggets</p>
+                    <p class="place">Busan</p>
+                    <span class="rating">4.2 <i class="fa-solid fa-star"></i></span>
+                </div>
+            </div>
+            <div class="restaurant">
+                <div class="restaurant-thumbnail">
+                    <img src="img/restaurant-4.png" class="restaurants-img" alt="">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Restauant 04</h3>
+                    <p class="menu">Indian Cuisine</p>
+                    <p class="place">Busan</p>
+                    <span class="rating">4.2 <i class="fa-solid fa-star"></i></span>
+                </div>
+            </div>
+            <div class="restaurant">
+                <div class="restaurant-thumbnail">
+                    <img src="img/restaurant-5.png" class="restaurants-img" alt="">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Restauant 05</h3>
+                    <p class="menu">Chinese Cuisine, Noodle</p>
+                    <p class="place">Busan</p>
+                    <span class="rating">4.2 <i class="fa-solid fa-star"></i></span>
+                </div>
+            </div>
+            <div class="restaurant">
+                <p class="discount">50% off</p>
+                <div class="restaurant-thumbnail">
+                    <img src="img/restaurant-6.png" class="restaurants-img" alt="">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Restauant 06</h3>
+                    <p class="menu">Chichken Nuggets, chic...</p>
+                    <p class="place">Busan</p>
+                    <span class="rating">4.2 <i class="fa-solid fa-star"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="leaf-layer left">
+            <img src="img/leaf-left.png"  alt="">
+       </div>
+
+    </section>
+
+    <!--about section-->
+    <section id="about-section">
+
+        <div class="about-us-review-container">
+
+            <div class="circle"></div>
+
+            <img src="img/pizza-pan.png" class="pizza-pan-img" alt="">
+        </div>
+
+        <!--about services-->
+        <div class="about">
+            <h2 class="about-title">Why Us??</h2>
+
+            <p class="about-info">We serve the best in taste. Our customers are our number 1 priority. See what others think about us.</p>
+
+            <div class="services-container">
+                <div class="service">
+                    <div class="service-title">
+                        <img src="img/fastest-delivery.png" class="service-img" alt="">
+                        <h3 class="service-name">Fastest Delivery</h3>
+                    </div>
+                    <p class="service-detail">Why wait? We're already on the way. Lightning-fast delivery at your doorstep. Fast.Reliable.Delivered</p>
+                </div>
+
+                <div class="service">
+                    <div class="service-title">
+                        <img src="img/best-prices.png" class="service-img" alt="">
+                        <h3 class="service-name">Best Prices</h3>
+                    </div>
+                    <p class="service-detail">Top quality, lowest prices.</p>
+                </div>
+
+                <div class="service">
+                    <div class="service-title">
+                        <img src="img/20+ restaurant.png" class="service-img" alt="">
+                        <h3 class="service-name">20+ Restauants</h3>
+                    </div>
+                    <p class="service-detail">More choices. More flavors</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="faq-section">
+        
+        <h1 class="section-title">Frequently Ask Questons</h1>
+
+        <div class="faq">
+            <div class="question-box">
+                <h3 class="question">📦 How do I place an order?</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="answer-box">
+                <p class="answer">Add items to your cart, and click the checkout button. A confirmation message will appear to simulate your order placement.</p>
+            </div>
+
+        </div>
+
+        <div class="faq">
+            <div class="question-box">
+                <h3 class="question">💳 Do you support online payments?</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="answer-box">
+                <p class="answer">Currently, this site is a demo project and does not support real payments. Future versions may include payment gateways.</p>
+            </div>
+
+        </div>
+
+        <div class="faq">
+            <div class="question-box">
+                <h3 class="question">⏱ How long does delivery take?</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="answer-box">
+                <p class="answer">In a real-world version, delivery time would depend on location. For now, this is a front-end simulation only.</p>
+            </div>
+
+        </div>
+
+        <div class="faq">
+            <div class="question-box">
+                <h3 class="question">🛒 Can I edit or remove items from my cart?</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="answer-box">
+                <p class="answer">Yes! Visit the cart page to remove items or simulate checkout.</p>
+            </div>
+
+        </div>
+
+        <div class="faq">
+            <div class="question-box">
+                <h3 class="question">Is this a real food delivery service?</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="answer-box">
+                <p class="answer">No, this is a demo project designed to show how a food delivery website works using only front-end technologies like HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+        
+        <div class="dish-layer"><img src="img/side-dish.png" alt=""></div>
+
+        
+
+    </section>
+    <!--Download app section-->
+    <section id="download-app-section">
+
+        <div class="section">
+
+            <div class="download-app-container">
+                <div class="pulse">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <img src="img/leafs.png"  class="leaf-left">
+                <img src="img/leaf-left.png"  class="leaf-right">
+
+                <img src="img/app.png" class="phone-mockup" alt="">
+            </div>
+
+            <div class="section-detail">
+                <span class="section-highlight">Download our app to stay updated</span>
+                <p class="section-title">Make orders from your phone</p>
+                <p class="section-info">Get extra feature on app including tracking order, managing account and much more</p>
+
+                <div class="download-btn-group">
+                    <a href="#" class="download-btn"> <img src="img/play-store.png" alt=""></a>
+                    <a href="#" class="download-btn"> <img src="img/app-store.png" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>  

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiteNow</title>
+    <!--Google fonts CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BiteNow</h1>
+            <ul class="links-container">
+                <li class="link-items"><a href="index.html" class="links">Main</a></li>
+                <li class="link-items"><a href="order.html" class="links">Order</a></li>
+                <li class="link-items"><a href="index.html" class="links">Restauants</a></li>
+                <li class="link-items"><a href="index.html" class="links">About Us</a></li>
+            </ul>
+            <div class="cart-icon" onclick="toggleCart()">
+                <span>🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="products">
+            <h2>Menu</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <div class="cart-overlay" id="cartOverlay" onclick="closeCart()">
+            <div class="cart-sidebar" onclick="event.stopPropagation()">
+                <div class="cart-header">
+                    <h3>Shopping Cart</h3>
+                    <button class="close-btn" onclick="closeCart()">×</button>
+                </div>
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be displayed here -->
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <strong>Total: $<span id="cartTotal">0.00</span></strong>
+                    </div>
+                    <button class="checkout-btn" onclick="checkout()" id="checkoutBtn">
+                        Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Checkout Success Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <div class="popup-content">
+                <h3>🎉 Order Successful!</h3>
+                <p>Thank you for your purchase!</p>
+                <p>Your order total was $<span id="orderTotal">0.00</span></p>
+                <button onclick="closePopup()" class="popup-btn">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
