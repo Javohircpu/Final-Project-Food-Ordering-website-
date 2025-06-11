@@ -21,4 +21,4 @@ A responsive and user-friendly food ordering web application where users can add
 
 ## 🧪 How to Run Locally
 
-   git clone https://github.com/your-username/food-ordering-website.git
+  https://javohircpu.github.io/Final-Project-Food-Ordering-website-/
