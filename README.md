@@ -16,7 +16,7 @@ A responsive and user-friendly food ordering web application where users can add
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript (or React/Vue if used)
+- **Frontend:** HTML, CSS, JavaScript
 ---
 
 ## 🧪 How to Run Locally
